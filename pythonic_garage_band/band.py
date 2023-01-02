@@ -1,6 +1,5 @@
-
 class Band:
-    def __init__(self,name="unknown",members=None):
+    def __init__(self, name="unknown", members=None):
         self.name = name
         self.members = members or []
 
@@ -12,7 +11,7 @@ class Band:
         return f"Band({self.musicians})"
 
     def play_solos(self):
-        solos=[]
+        solos = []
         for member in self.members:
             solos.append(member.solo)
         return solos
@@ -64,7 +63,7 @@ class Bassist(Musician):
 
 class Drummer(Musician):
     def __init__(self, name="unknown"):
-        super().__init__(name, "drums", "Drummer", "face melting guitar solo")
+        super().__init__(name, "drums", "Drummer", "rattle boom crash")
     #
     # def __repr__(self):
     #     return f"Drummer instance. Name = {self.name}"
